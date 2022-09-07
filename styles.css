@@ -115,6 +115,19 @@ p>input:focus{
 input[type=submit]:active{
     background-color: var(--darker-green);
 }
+p.error{
+    position: relative;
+}
+p.error::after{
+    content: "* Passwords do not match";
+    position: absolute;
+    top: 7em;
+    font-size: 10px;
+    color:red;
+}
+input.error{
+    border:1px solid red;
+}
 .login{
     padding:var(--padding);
     font-size:18px;

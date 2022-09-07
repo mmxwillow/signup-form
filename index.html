@@ -22,12 +22,12 @@
             <div class="wrapper">
                 <h1>Let's do this!</h1>
                 <section>
-                    <p><label for="">first name</label><input type="text"></p>
-                    <p><label for="">last name</label><input type="text"></p>
-                    <p><label for="">email</label><input type="email"></p>
-                    <p><label for="">phone number</label><input type="tel"></p>
-                    <p><label for="">password</label><input type="password"></p>
-                    <p><label for="">confirm password</label><input type="password"></p>
+                    <p><label for="fname">first name</label><input name="fname" type="text" required></p>
+                    <p><label for="lname">last name</label><input name="lname" type="text"></p>
+                    <p><label for="mail">email</label><input name="mail" type="email" required></p>
+                    <p><label for="tel">phone number</label><input name="tel" type="tel" required></p>
+                    <p id="input-wrapper"><label for="psswrd">password</label><input name="password" type="password" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" title="Minimum eight characters, at least one letter and one number."></p>
+                    <p><label for="confirm">confirm password</label><input name="confirm" type="password" required></p>
                 </section>
             </div>
             <input type="submit" value="Create account">
